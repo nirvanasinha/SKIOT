@@ -1,0 +1,74 @@
+<html>
+<head>
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Web login</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Smart Kitchen web login. You're currently logged in.</p>
+    <button><a href="index.html">Home</a></button><br><br>
+	<button><a href="webso.html">Debug Console</a></button><br><br>
+	<button onclick="logout()">Logout</button><br><br><br><br><br><br>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCn-sgeffv7XqWxA0gkbe2HbQG-XIE7Z5s",
+      authDomain: "smartkitchen-46d2d.firebaseapp.com",
+      databaseURL: "https://smartkitchen-46d2d.firebaseio.com",
+      projectId: "smartkitchen-46d2d",
+      storageBucket: "smartkitchen-46d2d.appspot.com",
+	  messagingSenderId: "287929464537",
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+
+
+<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>Overview of the Project</h3>
+							<p>We are proposing a smart system which will sense and automate functions in a kitchen ranging from its safety to productivity.
+							Gas leakage, Fire Sensor and Motion automation.</p>
+							</section>
+						<section>
+							<h4>Links</h4>
+							<ul class="alt">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="generic1.html">Our Project</a></li>
+								<li><a href="login.html">Login</a></li>
+							</ul>
+						</section>
+						<section>
+							<h4>Download Our App</h4>
+							<ul class="plain">
+								<li><a href="#"><i class="icon fa-github">&nbsp;</i>App Link</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy; Team Smart Kitchen IoT - Anubhav, Akshay, Tanya, & Parth.
+					</div>
+				</div>
+			</footer>
+	
+</body>
+</html>
